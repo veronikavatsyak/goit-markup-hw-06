@@ -207,7 +207,7 @@ font-weight: 500;
 
 .hero {
     background-color: #2e2f42;
-    padding: 72px 52px;
+    padding: 72px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7), 
         rgba(46, 47, 66, 0.7)
@@ -384,7 +384,7 @@ font-weight: 500;
         justify-content: center;
 }
 .our-portfolio {
-    padding: 96px 16px;
+    padding: 96px 0;
 }
 
 .our-portfolio-title {
@@ -433,37 +433,45 @@ border-bottom: 1px solid #e7e9fc;
 
 .page-footer {
     background-color: #2e2f42;
-    padding: 100px 0;
+    padding: 96px 0;
 }
 
 .footer-logo .logo-part {
     color: #f4f4fd;
 }
 .footer-logo {
-    display: inline-block;
     margin-bottom: 16px;
+    text-align: center;
+        display: block;
+   
+    
 }
 .footer-text {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
-        max-width: 264px;
+        max-width: 288px;
 }
 .footer-container {
 display: flex;
-gap: 16px;
-align-items: baseline;
-margin: auto;
+flex-wrap: wrap;
+gap: 72px;
 }
-
-
+.footer-logo-wrapper {
+margin-right: 0;
+}
+.social-media-wrapper {
+margin-left: auto;
+margin-right: auto;
+}
 .social-media-text {
     font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #fff;
 margin-bottom: 16px;
+text-align: center;
 }
 
  .our-team-border-item > .our-team-border-link  {
@@ -475,31 +483,23 @@ margin-bottom: 16px;
 .footer-border .our-team-border-link:focus {
 background-color: #31d0aa;
 }
-.footer-border {
-    gap:16px;
-}
-.footer-logo-wrapper {
-    margin-right: 120px;
-}
 
 .subscribe-container {
-    margin-left: auto;
-        min-width: 453px;
-}
-.footer-form {
     display: flex;
-   
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
 }
+
 .subscribe-label {
  font-weight: 500;
  color: #fff;
- margin-bottom: 16px;
+ display: block;
+ 
 }
 .subscribe-input {
 border: 1px solid #fff;
 border-radius: 4px;
-width: 264px;
+width: 288px;
 height: 40px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background-color: transparent;
@@ -509,6 +509,10 @@ font-weight: 400;
     letter-spacing: 0.04em;
     color: #fff;
     padding: 8px 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
 }
 .subscribe-input::placeholder {
 color: #fff;
@@ -537,6 +541,8 @@ cursor: pointer;
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
+    margin-left: auto;
+    margin-right: auto;
     
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -554,7 +560,9 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #fff;
-margin-bottom: 16px;
+margin-left: auto;
+margin-right: auto;
+
 }
 
 
@@ -579,9 +587,9 @@ margin-bottom: 16px;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 408px;
-    min-height: 584px;
-    padding: 24px;
+    width: 288px;
+    min-height: 623px;
+    padding: 24px 16px;
     padding-top: 72px;
     transform: translate(-50%, -50%);
     border-radius: 4px;
@@ -637,8 +645,9 @@ display: flex;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        max-width: 256px;
     margin-bottom: 16px;
-    max-width: 360px;
+    
     
 
 }
@@ -660,7 +669,7 @@ display: flex;
 .modal-input {
     border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
-        width: 360px;
+        width: 256px;
         height: 40px;
     padding-left: 38px;
     outline: transparent;
@@ -694,7 +703,7 @@ display: flex;
     border-radius: 13px;
     border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
-        width: 360px;
+        width: 256px;
         height: 120px;
     resize: none;
     outline: none;
@@ -703,7 +712,6 @@ display: flex;
         letter-spacing: 0.04em;
         color: rgba(46, 47, 66, 0.4);
         background-color: transparent;
-        padding: 8px 16px;
         outline: transparent;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -764,6 +772,7 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     align-items: center;
     margin-right: 8px;
     fill: transparent;
+    flex-shrink: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -781,7 +790,10 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
+        display: flex;
+        align-items: center;
 }
+
 
 .label-user-link {
     text-decoration: underline;
@@ -912,6 +924,57 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     .our-team-item {
         width: calc((100% - 24px) / 2);
     }
+    .footer-container {
+        padding-left: 108px;
+        padding-right: 108px;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+        .footer-logo {
+            text-align: left;
+        }
+    .footer-text {
+        max-width: 264px;
+    }
+        .social-media-wrapper {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .social-media-text {
+            text-align: left;
+        }
+        .subscribe-container {
+            display: block;
+
+    }
+        .subscribe-text {
+            margin-bottom: 16px;
+    }
+    .subscribe-input {
+        width: 264px;
+    }
+        .footer-form {
+            display: flex;
+            gap: 24px;
+    }
+    .modal {
+         width: 408px;
+            min-height: 584px;
+         padding-left: 24px;
+         padding-right: 24px;
+         padding-bottom: 24px;
+         padding-top: 0;
+    }
+    .modal-text {
+        max-width: 360px;
+        padding-top: 72px;
+    }
+    .modal-input {
+        width: 360px;
+    }
+    .modal-textarea {
+        width: 360px;
+    }
 }
 @media screen and (min-width: 1158px) {
     .container {
@@ -1038,6 +1101,24 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     .our-team-item {
         width: calc((100% - 72px) / 4);
         }
+    .page-footer {
+        padding: 100px 0;
+    }
+    .footer-container {
+     gap: 16px;
+        align-items: baseline;
+    margin: auto;
+    }
+    .footer-border {
+        gap:16px;
+    } 
+    .footer-logo-wrapper {
+        margin-right: 120px;
+    } 
+    .subscribe-container {
+        margin-left: auto;
+        min-width: 453px;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .our-team .container {
